@@ -9,6 +9,7 @@ body{
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    max-width: 100%;
 }
 #keyBoard  button{
     margin: 5px;
@@ -23,6 +24,7 @@ body{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    
 }
 #keyBoard > button:hover{
     background-color: rgba(240, 248, 255, 0.86);
@@ -31,12 +33,14 @@ body{
 #keyBoard div{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 button:disabled {
     opacity: 0.5;
 }
 #winner,#loser{
     display: none;
+    width: 100%;
 }
 .letter{
     display: flex;
@@ -63,6 +67,13 @@ button:disabled {
     .gameDisplay{
         width: 100%;
         margin: 0;
+    }
+    .letter{
+        margin-right: 8px;
+        padding: 28px 12px;
+    }
+    #keyBoard div{
+        width: 100%;
     }
 }
 
